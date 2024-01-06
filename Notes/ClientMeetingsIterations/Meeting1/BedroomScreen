@@ -1,0 +1,22 @@
+First Iteration:
+
+- Tenant information:
+		- Name
+		- Phone Number
+		- Mail
+		- Payment Value
+		- Payment Date
+		- Payment Status
+		- Nationality
+		- CC (upload a photo in the future):
+			- ID
+			- Expire Date
+		- Occupation
+		- Date of entry / Date of Exit
+		
+- BTN - Delete Bedroom
+	- POP-UP:  confirmation pop-up
+
+- LIST - keeps track of the user's furniture.
+
+- LIST - Tasks to be done created in this bedroom.

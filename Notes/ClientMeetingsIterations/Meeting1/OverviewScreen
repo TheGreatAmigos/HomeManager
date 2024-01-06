@@ -1,0 +1,4 @@
+First Iteration:
+
+- LIST - list of buttons (buttons should have info of how many things that the user should look at) to open modals with the specific information;
+- BTN - "Back" go back to MainScreen.
