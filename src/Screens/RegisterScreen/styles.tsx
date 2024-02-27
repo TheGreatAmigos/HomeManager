@@ -14,7 +14,7 @@ export const styles = StyleSheet.create({
         width: 314,
         height: 47,
         marginLeft: (width - 312)/2,
-        marginTop: 55,
+        marginTop: height - (0.92 * height),
         flexDirection: 'row',
         justifyContent: 'center',
     },
@@ -48,14 +48,15 @@ export const styles = StyleSheet.create({
         marginLeft: (width - 312)/2,
     },
     subContainer: {
-        marginTop: 120,
+        position: 'absolute',
+        bottom: height - (0.92 * height), // Distance from the bottom
+        left: (width - 311) / 2,
         flexDirection: 'column',
     },
     input: {
         marginTop: 10,
         width: 311,
         flexDirection: 'row',
-        marginLeft: (width - 312)/2,
         alignItems: 'center',
         backgroundColor: '#FFFFFF',
     },
@@ -63,7 +64,6 @@ export const styles = StyleSheet.create({
         marginTop: 10,
         width: 311,
         flexDirection: 'row',
-        marginLeft: (width - 312)/2,
         alignItems: 'center',
         backgroundColor: '#FFFFFF',
         fontFamily: 'KumbhSans-SemiBold',
@@ -82,4 +82,8 @@ export const styles = StyleSheet.create({
         fontFamily: 'KumbhSans-Medium',
         color: '#FFFFFF',
     },
+    background: {
+        ...StyleSheet.absoluteFillObject,
+        zIndex: -1,
+    }
 });

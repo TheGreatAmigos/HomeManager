@@ -1,5 +1,4 @@
-import { StyleSheet } from "react-native";
-import { Dimensions } from 'react-native';
+import { StyleSheet, Dimensions } from "react-native";
 
 const { width, height } = Dimensions.get('window');
 
@@ -13,7 +12,7 @@ export const styles = StyleSheet.create({
         width: 314,
         height: 47,
         marginLeft: (width - 312)/2,
-        marginTop: 55,
+        marginTop: height - (0.92 * height),
         flexDirection: 'row',
         justifyContent: 'center',
     },
@@ -48,13 +47,14 @@ export const styles = StyleSheet.create({
         marginLeft: (width - 312)/2,
     },
     subContainer: {
-        marginTop: 190,
+        position: 'absolute',
+        bottom: height - (0.907 * height), // Distance from the bottom
+        left: (width - 311) / 2,
         flexDirection: 'column',
     },
     usernameInp: {
         width: 311,
         flexDirection: 'row',
-        marginLeft: (width - 312)/2,
         alignItems: 'center',
         backgroundColor: '#FFFFFF'
     },
@@ -62,7 +62,6 @@ export const styles = StyleSheet.create({
         marginTop: 10,
         width: 311,
         flexDirection: 'row',
-        marginLeft: (width - 312)/2,
         alignItems: 'center',
         backgroundColor: '#FFFFFF'
     },
@@ -79,4 +78,8 @@ export const styles = StyleSheet.create({
         fontSize: 12,
         color: '#FFFFFF',
     },
+    background: {
+        ...StyleSheet.absoluteFillObject,
+        zIndex: -1,
+    }
 });

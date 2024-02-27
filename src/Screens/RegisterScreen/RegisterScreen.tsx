@@ -8,6 +8,7 @@ import Input from "../Components/Txt_input/input.tsx";
 import UserIcon from "../../assets/userIcon.svg";
 import PasswordIcon from "../../assets/passwordIcon.svg";
 import MailIcon from "../../assets/mailIcon.svg";
+import Background from '../../assets/intro_background.svg';
 
 const { width, height } = Dimensions.get('window');
 
@@ -20,6 +21,7 @@ function RegisterScreen({ navigation }: any): React.ReactElement {
 
     return (
         <View style={styles.container}>
+            <Background style={styles.background} />
             <View style={styles.header}>
                 <View style={styles.logInContainer}>
                     <TouchableOpacity onPress={goToLogin}>

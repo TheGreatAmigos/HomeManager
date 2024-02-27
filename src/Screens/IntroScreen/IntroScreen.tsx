@@ -1,13 +1,13 @@
 import React from "react";
-import { View, Pressable, Text } from "react-native"; // Import Text component
+import { View, Pressable } from "react-native";
 import { styles } from "./styles";
-// Importing SVG file should look like this:
 import Title from '../../assets/tittle_app.svg';
 import Btn_intro from '../Components/Btn_intro/btn.tsx';
+import Background from '../../assets/intro_background.svg';
 
 function IntroScreen({ navigation }: any): React.ReactElement {
     console.log('IntroScreen');
-    
+
     function goToLogin() {
         navigation.navigate('LogInScreen');
     }
@@ -15,10 +15,13 @@ function IntroScreen({ navigation }: any): React.ReactElement {
     function goToRegister() {
         navigation.navigate('RegisterScreen');
     }
-    
+
     return (
         <View style={styles.container}>
-            {/* Wrapping Title in a View */}
+            {/* SVG Background */}
+            <Background style={styles.background} />
+
+            {/* Content */}
             <View style={styles.title}>
                 <Title />
             </View>
