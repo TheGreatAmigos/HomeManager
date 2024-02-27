@@ -18,6 +18,10 @@ function LogInScreen({ navigation }: any): React.ReactElement {
         navigation.navigate('RegisterScreen');
     }
 
+    function goToMain() {
+        navigation.navigate('MainScreen');
+    }
+
     return (
         <View style={styles.container}>
             <Background style={styles.background} />
@@ -47,7 +51,9 @@ function LogInScreen({ navigation }: any): React.ReactElement {
                     <PasswordIcon width={24} height={24} />
                 </View>
                 <View style={styles.btnRegister}>
-                    <Btn_intro text='Log in' backgroundColor='#0B844A' textColor='#FFFFFF' />
+                    <TouchableOpacity onPress={goToMain}>
+                        <Btn_intro text='Log in' backgroundColor='#0B844A' textColor='#FFFFFF' />
+                    </TouchableOpacity>
                 </View>
                 <View style={styles.help}>
                     <Text style={styles.helpText}>Forgot Password?</Text>
