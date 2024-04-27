@@ -3,6 +3,7 @@ import { Dimensions } from 'react-native';
 
 const { width, height } = Dimensions.get('window');
 console.log('Y total' + height);
+console.log('X total' + width);
 
 export const styles = StyleSheet.create({
     container:{
@@ -13,7 +14,7 @@ export const styles = StyleSheet.create({
         width: 314,
         height: 47,
         marginLeft: (width - 312)/2,
-        marginTop: height - (0.92 * height),
+        marginTop: (0.05 * height),
         flexDirection: 'row',
         justifyContent: 'center',
     },
@@ -40,7 +41,7 @@ export const styles = StyleSheet.create({
         borderColor: '#FFFFFF',
     },
     title: {
-        marginTop: 54,
+        marginTop: 100,
         width: 312,
         height: 84,
         alignItems: 'center',
@@ -48,7 +49,7 @@ export const styles = StyleSheet.create({
     },
     subContainer: {
         position: 'absolute',
-        bottom: height - (0.92 * height), // Distance from the bottom
+        bottom: (0.075 * height), // Distance from the bottom
         left: (width - 311) / 2,
         flexDirection: 'column',
     },
@@ -73,7 +74,7 @@ export const styles = StyleSheet.create({
         color: '#FFFFFF',
     },
     help:{
-        marginTop: 24,
+        marginTop: 18,
         alignSelf: 'center',
     }, 
     helpText: {
@@ -84,5 +85,11 @@ export const styles = StyleSheet.create({
     background: {
         ...StyleSheet.absoluteFillObject,
         zIndex: -1,
+    },
+    firstLine: {
+        marginBottom: -5,
+    },
+    secondLine:{
+        marginTop: -12,
     }
 });

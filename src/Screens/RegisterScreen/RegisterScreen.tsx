@@ -5,9 +5,9 @@ import Btn_intro from '../Components/Btn_intro/btn.tsx';
 import { Dimensions } from 'react-native';
 import Input from "../Components/Txt_input/input.tsx";
 
-import UserIcon from "../../assets/userIcon.svg";
-import PasswordIcon from "../../assets/passwordIcon.svg";
-import MailIcon from "../../assets/mailIcon.svg";
+import UserIcon from "../../assets/UserIcon.svg";
+import PasswordIcon from "../../assets/PasswordIcon.svg";
+import MailIcon from "../../assets/MailIcon.svg";
 import Background from '../../assets/intro_background.svg';
 
 const { width, height } = Dimensions.get('window');
@@ -35,8 +35,8 @@ function RegisterScreen({ navigation }: any): React.ReactElement {
                 </View>
             </View>
             <View style={styles.title}>
-                <Text style={styles.text}> Nice to </Text>
-                <Text style={styles.text}> meet you </Text>
+                <Text style={[styles.text, styles.firstLine]}> Nice to </Text>
+                <Text style={[styles.text, styles.secondLine]}> meet you </Text>
             </View>
             <View style={styles.subContainer}>
                 <View style={styles.input}>

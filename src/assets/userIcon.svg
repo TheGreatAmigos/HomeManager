@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: none;
-        stroke: #0b844a;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-width: 3px;
-      }
-    </style>
-  </defs>
-  <path class="cls-1" d="M46.77,22.12c0,6.5-5.27,11.77-11.78,11.77s-11.77-5.27-11.77-11.77,5.27-11.77,11.77-11.77,11.78,5.27,11.78,11.77"/>
-  <path class="cls-1" d="M52.8,59.64l-.02-5.43c-.04-6.66-5.67-15.01-17.59-14.97-11-.04-17.99,8.42-17.96,14.97l-.03,5.43"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 70 70" style="enable-background:new 0 0 70 70;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#0B844A;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<g>
+	<path class="st0" d="M46.8,22.6c0,6.5-5.3,11.8-11.8,11.8s-11.8-5.3-11.8-11.8S28.5,10.9,35,10.9S46.8,16.1,46.8,22.6"/>
+	<path class="st0" d="M52.8,59.1v-3.4c0-6.7-5.7-15-17.6-15c-11,0-18,8.4-18,15v3.4"/>
+</g>
 </svg>

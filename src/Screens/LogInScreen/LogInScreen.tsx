@@ -5,8 +5,8 @@ import Btn_intro from '../Components/Btn_intro/btn.tsx';
 import { Dimensions } from 'react-native';
 import Input from "../Components/Txt_input/input.tsx";
 
-import UserIcon from "../../assets/userIcon.svg";
-import PasswordIcon from "../../assets/passwordIcon.svg";
+import UserIcon from "../../assets/UserIcon.svg";
+import PasswordIcon from "../../assets/PasswordIcon.svg";
 import Background from '../../assets/intro_background.svg';
 
 const { width, height } = Dimensions.get('window');
@@ -38,8 +38,8 @@ function LogInScreen({ navigation }: any): React.ReactElement {
                 </View>
             </View>
             <View style={styles.title}>
-                <Text style={styles.text}> Good to see </Text>
-                <Text style={styles.text}> you again </Text>
+                <Text style={[styles.text, styles.firstLine]}> Good to see </Text>
+                <Text style={[styles.text, styles.secondLine]}> you again </Text>
             </View>
             <View style={styles.subContainer}>
                 <View style={styles.usernameInp}>

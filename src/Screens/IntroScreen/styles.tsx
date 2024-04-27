@@ -10,14 +10,13 @@ export const styles = StyleSheet.create({
     },
     title: {
         position: 'absolute',
-        top: height - (0.70 * height),
+        top: (0.30 * height),
         alignSelf: 'center',
-        width: 268,
-        height: 119
+        justifyContent: 'center',
     },
     subContainer: {
         position: 'absolute',
-        bottom: height - (0.87 * height), // Distance from the bottom
+        bottom: (0.116 * height), // Distance from the bottom
         left: (width - 311) / 2,
         flexDirection: 'column',
     },
@@ -27,5 +26,6 @@ export const styles = StyleSheet.create({
     background: {
         ...StyleSheet.absoluteFillObject,
         zIndex: -1,
+        flex:1,
     }
 });

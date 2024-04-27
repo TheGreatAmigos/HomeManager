@@ -18,10 +18,10 @@ function App({navigation}: any): React.ReactElement {
   return (
     <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name="IntroScreen" component={IntroScreen} />
-          <Stack.Screen name="LogInScreen" component={LogInScreen} />
-          <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
-          <Stack.Screen name="MainScreen" component={MainScreen} />
+          <Stack.Screen name="IntroScreen" component={IntroScreen}  options={{headerShown: false}}/>
+          <Stack.Screen name="LogInScreen" component={LogInScreen} options={{headerShown: false}}/>
+          <Stack.Screen name="RegisterScreen" component={RegisterScreen}  options={{headerShown: false}}/>
+          <Stack.Screen name="MainScreen" component={MainScreen}  options={{headerShown: false}}/>
         </Stack.Navigator>
     </NavigationContainer>
   );

@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
         alignSelf: 'center',
     },
     text: {
-        fontSize: 17,
+        fontSize: 14,
         fontFamily: 'KumbhSans-SemiBold',
         color: '#0B844A',
         marginLeft: 12,

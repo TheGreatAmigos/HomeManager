@@ -2,6 +2,8 @@ import { StyleSheet, Dimensions } from "react-native";
 
 const { width, height } = Dimensions.get('window');
 
+console.log('Altura' + height);
+console.log('Largura ' + width);
 console.log(' conta: ' + (height - (0.95 * height)));
 export const styles = StyleSheet.create({
     container: {
@@ -10,19 +12,19 @@ export const styles = StyleSheet.create({
         flexDirection: 'column',
     },
     iconContainer: {
-        width: 50,
-        height: 50,
-        marginLeft: (width - 312) / 2,
-        marginTop: (height - (0.95 * height)) / 2,
-        borderWidth: 1,
+        justifyContent: 'center',
+        marginLeft: 31,
+        marginTop: 37,
+        borderColor: 'green',
     },
     textContainer: {
         marginTop: 17,
-        borderWidth: 1,
-        marginLeft: (width - 312) / 2,
+        borderColor: 'blue',
+        marginLeft: 31,
         width: 311,
     },
     text1: {
+        letterSpacing: -0.7,
         fontSize: 35,
         fontFamily: 'KumbhSans-Bold',
         color: '#34383E',
@@ -45,17 +47,19 @@ export const styles = StyleSheet.create({
         borderWidth: 1,
         height: 145,
         width: 330,
-        marginLeft: (width - 330) / 2,
+        marginLeft: 31,
         marginTop: 43,
     },
     subContainer: {
-        marginTop: 18,
+        marginTop: 5,
         borderWidth: 1,
-        height: 247,
+        //height: 247,
+        height: 205,
         width: 329,
         marginLeft: (width - 329) / 2,
     },
     textSubContainer: {
+        marginTop: 10,
         fontSize: 12,
         fontFamily: 'KumbhSans-ExtraBold',
         color: '#334444',
