@@ -15,12 +15,16 @@ import java.util.ArrayList;
 import com.BV.LinearGradient.LinearGradientPackage;
 // react-native-radial-gradient
 import com.surajit.rnrg.RNRadialGradientPackage;
+// react-native-reanimated
+import com.swmansion.reanimated.ReanimatedPackage;
 // react-native-safe-area-context
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 // react-native-screens
 import com.swmansion.rnscreens.RNScreensPackage;
 // react-native-svg
 import com.horcrux.svg.SvgPackage;
+// react-native-video
+import com.brentvatne.react.ReactVideoPackage;
 
 public class PackageList {
   private Application application;
@@ -68,9 +72,11 @@ public class PackageList {
       new MainReactPackage(mConfig),
       new LinearGradientPackage(),
       new RNRadialGradientPackage(),
+      new ReanimatedPackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage(),
-      new SvgPackage()
+      new SvgPackage(),
+      new ReactVideoPackage()
     ));
   }
 }
