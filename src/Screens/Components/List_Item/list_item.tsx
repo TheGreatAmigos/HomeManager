@@ -1,15 +1,25 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, Dimensions } from "react-native";
 import { styles } from "./styles";
 
-import Background from '../../../assets/intro_background.svg';
+import BtnIcon from "../../../assets/Btn_arrow.svg";
+import Background from '../../../assets/btn_background.svg';
 
-function List_item({ text, textColor, align='center', opacity = 1 }: { text: string, textColor: string,  align?: 'left' | 'center', opacity?: number | 1 }): React.ReactElement {
+const { width, height } = Dimensions.get('window');
+
+function List_item({ text, textColor, width = 312, height = 42, opacity = 1 }: { text: string, textColor: string, opacity?: number | 1, width?: number | 312, height?: number | 42 }): React.ReactElement {
     return (
-        <View>
+        <View style={[styles.container, { width: width, height: height }]}>
             <Background style={styles.background} />
-            <View style={styles.container}>
-                <Text style={[styles.text, { color: textColor, marginLeft: 21, opacity: opacity }]}>{text}</Text>
+            <View style={{ flexDirection: 'row' }}>
+                <View style={{flex:1}}>
+                    <Text style={[styles.text, { color: textColor, opacity: opacity }]}>{text}</Text>
+                </View>
+                <View style={[styles.icon,{ marginRight: (width* 0.04 )}]}>
+                    <BtnIcon />
+                </View>
+
+
             </View>
         </View>
     );

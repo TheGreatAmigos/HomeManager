@@ -44,16 +44,17 @@ export const styles = StyleSheet.create({
         textDecorationLine: 'underline',
     },
     graphsContainer: {
+        position: 'absolute',
         borderWidth: 1,
         height: 145,
         width: 330,
         marginLeft: 31,
-        marginTop: 43,
+        bottom: ( height * 0.4),
+        flexDirection: 'row',
     },
     subContainer: {
-        marginTop: 5,
-        borderWidth: 1,
-        //height: 247,
+        position: 'absolute',
+        bottom: (height * 0.1),
         height: 205,
         width: 329,
         marginLeft: (width - 329) / 2,
@@ -64,13 +65,22 @@ export const styles = StyleSheet.create({
         fontFamily: 'KumbhSans-ExtraBold',
         color: '#334444',
     },
-    item: {
-        padding: 10,
-        fontSize: 18,
-        height: 44,
-    },
     btnContainer: {
+        borderWidth: 1,
         marginTop: 12,
+    },
+    graphLeft: {
+        borderWidth: 1,
+        borderColor: 'red',
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    graphRight: {
+        borderWidth: 1,
+        borderColor: 'blue',
+        flex: 1,
+        alignItems: 'center',
     }
 
 });
